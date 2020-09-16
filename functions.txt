@@ -1,0 +1,7 @@
+def centre_text(*args,sep=" "):
+    text =""
+    for arg in args:
+        text = text + str(arg) + sep
+    text =  text[0:-1]
+    leftmargin = (80-len(text))//2
+    return " "*leftmargin + text
