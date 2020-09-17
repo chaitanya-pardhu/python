@@ -1,0 +1,42 @@
+class Wing(object):
+    def __init__(self,ratio):
+        self.ratio = ratio
+
+    def fly(self):
+        if self.ratio > 1:
+            print("wee this is fun")
+        elif self.ratio == 1:
+            print("This is hardwork but i m flying")
+        else:
+            print("I think i will walk")
+
+
+class Duck(object):
+    def __init__(self):
+        self._wing = Wing(1.8)### now the duck has got the wing object so consequently we can give the duck a fly method
+
+    def walk(self):
+        print("waddle,waddle,waddle")
+
+    def swim(self):
+        print("come on in the water is lovely")
+
+    def quack(self):
+        print("quack quack")
+
+    def fly(self):
+        self._wing.fly()
+
+
+
+class Penguin(object):
+    def walk(self):
+        print("waddle ,waddle i waddle too")
+
+    def swim(self):
+        print("come on in but its bit chilly")
+
+    def quack(self):
+        print("are you avin or larf i am penguin")
+
+
